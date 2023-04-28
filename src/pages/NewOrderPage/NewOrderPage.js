@@ -41,7 +41,7 @@ export default function NewOrderPage({ user, setUser }) {
   // results in the effect running after
   // the FIRST render only
 
-  /*-- Event Handlers --*/
+  // EVENT HANDLERS
   async function handleAddToOrder(itemId) {
     const updatedCart = await ordersAPI.addItemToCart(itemId);
     setCart(updatedCart);
@@ -67,7 +67,7 @@ export default function NewOrderPage({ user, setUser }) {
           setActiveCat={setActiveCat}
         />
         <Link to="/orders" className="button btn-sm">
-          PREVIOUS ORDERS
+          Previous Orders
         </Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
