@@ -15,7 +15,7 @@ const lineItemSchema = new Schema(
 );
 
 lineItemSchema.virtual('extPrice').get(function () {
-  // 'this' is bound to the lineItem subdoc
+  // 'this' is bound to the lineItem.js subdocument in components???
   return this.qty * this.item.price;
 });
 
@@ -84,7 +84,7 @@ orderSchema.methods.setItemQty = function (itemId, newQty) {
     // Calling remove, removes itself from the cart.lineItems array
     lineItem.remove();
   } else if (lineItem) {
-    // Set the new qty - positive value is assured thanks to prev if
+    // Set the new qty. A positive value is assured thanks to previous IF conditional statement
     lineItem.qty = newQty;
   }
   // return the save() method's promise

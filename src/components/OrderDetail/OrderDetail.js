@@ -55,7 +55,7 @@ export default function OrderDetail({
             </section>
           </>
         ) : (
-          <div className={styles.hungry}>Hungry?</div>
+          <div className={styles.hungry}>Thirsty?</div>
         )}
       </div>
     </div>
