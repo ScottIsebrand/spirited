@@ -1,0 +1,39 @@
+.MenuListItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vmin;
+  padding: 2vmin;
+  color: var(--text-light);
+  background-color: var(--white);
+  border: 0.1vmin solid var(--blue-3);
+  border-radius: 1vmin;
+  font-size: 4vmin;
+}
+
+.MenuListItem .emoji {
+  height: 8vw;
+  width: 8vw;
+  font-size: 4vw;
+  background-color: var(--blue-1);
+  border: 0.1vmin solid var(--blue-3);
+  border-radius: 1vmin;
+}
+
+.MenuListItem .buy {
+  display: flex;
+  flex-direction: column;
+}
+
+.MenuListItem .buy span {
+  font-size: 1.7vw;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.MenuListItem .name {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--text-light);
+}

@@ -1,60 +1,61 @@
-// * We will use a src/utilities/users-service.js module to organize functions used to sign-up, log in, log out, etc.
+// Login function is defined herein at bottom
+// We will use a src/utilities/users-service.js module to organize functions used to sign-up, log in, log out, etc.
 
-//* SignUpForm.jsx <--> users-service.js <--> users-api.js <-Internet-> server.js (Express)
+// Import all named exports attached to a usersAPI object. This syntax can be helpful documenting where the methods come from
+import * as usersAPI from './users-api';
 
-//* handleSubmit <--> [signUp]-users-service <--> [signUp]-users-api <-Internet-> server.js (Express)
-
-import * as usersApi from './users-api';
-
-//* Get Token
+// GET Token function
 export function getToken() {
-    const token = localStorage.getItem('token');
-    // if there is no token
-    if (!token) return null;
+  // getItem returns null if there's no string
+  const token = localStorage.getItem('token');
+  // If there's no token
+  if (!token) return null;
 
-    const payload = JSON.parse(atob(token.split('.')[1]));
-    console.log(payload);
+  // Obtain the payload of the token
+  const payload = JSON.parse(atob(token.split('.')[1]));
+  console.log(payload);
 
-    // if token is expired
-    if (payload.exp < Date.now() / 1000) {
-        localStorage.removeItem('token');
-        return null;
-    }
-
-    // token is valid
-    return token;
-
+  // Check if token is expired. A JWT's exp is expressed in seconds, not milliseconds, so convert
+  if (payload.exp < Date.now() / 1000) {
+    // Because token has expired - remove it from localStorage
+    localStorage.removeItem('token');
+    return null;
+  }
+  // Token is valid
+  return token;
 }
 
-//* Get User
+// Get User function; this is used inside App.js so call this function inside App.js
 export function getUser() {
-    const token = getToken();
-    return token ? JSON.parse(atob(token.split('.')[1])).user : null;
+  // Call the getToken
+  const token = getToken();
+  // If there's a token (truthy value), ie, it's valid, return the payload (user data), else return null
+  return token ? JSON.parse(atob(token.split('.')[1])).user : null;
 }
-
-//* SignUp
+// SignUp
 export async function signUp(userData) {
-     // Delegate the network request code to the users-api.js API module
-    // which will ultimately return a JSON Web Token (JWT)
-    // console.log('[From SignUP function]', userData);
-    const token = await usersApi.signUp(userData);
-    // saves token to localStorage
-    localStorage.setItem('token', token);
-    
-    return getUser();
+  // SignUp users comes in here.
+  // Delegate the network request code to the users-api.js API module which will ultimately return a JSON Web Token (JWT)
+  // console.log('[From SignUp function]', userData); // <-- IMPORTANT to console to be sure it's working
+  const token = await usersAPI.signUp(userData);
+  // Save token to localStorage; ie, persist the "token"
+  localStorage.setItem('token', token);
+
+  // getUser returning (not the token)
+  return getUser();
 }
 
-//* LogOut
+// logOut
 export function logOut() {
-    localStorage.removeItem('token')
+  localStorage.removeItem('token');
 }
 
 export async function login(credentials) {
-    const token = await usersApi.login(credentials)
-    localStorage.setItem('token', token);
-    return getUser();
+  const token = await usersAPI.login(credentials);
+  localStorage.setItem('token', token);
+  return getUser();
 }
-
+// orderHistoryPage handleCheckToken comes here; token is checked for
 export async function checkToken() {
-    return usersApi.checkToken().then(dateStr => new Date(dateStr))
+  return usersAPI.checkToken().then((dateStr) => new Date(dateStr));
 }
