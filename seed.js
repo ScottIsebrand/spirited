@@ -3,8 +3,14 @@ require('./config/database');
 
 const Category = require('./models/category');
 const Item = require('./models/item');
+const User = require('./models/user');
 
 (async function () {
+  await User.deleteMany({});
+  await User.create([
+    { name: 'Mark', email: 'mark@gmail.com', password: '123', isAdmin: true },
+  ]);
+
   await Category.deleteMany({});
   const categories = await Category.create([
     { name: 'Gin', sortOrder: 10 },

@@ -1,0 +1,39 @@
+.ProductDetailModalBackground {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(9, 1, 78, 0.7);
+}
+
+.ProductDetailModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  background-color: rgb(203, 226, 235);
+  border-radius: 8px;
+  top: 15%;
+  margin: auto;
+  z-index: 10; /* Sit on top */
+}
+.ProductDetailModal .productDetailContainer h3 {
+  border-bottom: solid 0.5px gray;
+  margin-bottom: 50px;
+  color: #113542;
+  text-align: center;
+}
+.ProductDetailModal .productDetailContainer {
+  width: 45%;
+}
+
+.ProductDetailModal .productImage {
+  max-width: 35%;
+  max-height: 35%;
+  margin: 3%;
+}

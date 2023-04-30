@@ -1,14 +1,6 @@
 const Order = require('../../models/order');
 // const Item = require('../../models/item');
 
-module.exports = {
-  cart,
-  addToCart,
-  setItemQtyInCart,
-  checkout,
-  history,
-};
-
 // Function to create user's unpaid order
 async function cart(req, res) {
   try {
@@ -65,3 +57,11 @@ async function history(req, res) {
     res.status(400).json({ msg: error.message });
   }
 }
+
+module.exports = {
+  cart,
+  addToCart,
+  setItemQtyInCart,
+  checkout,
+  history,
+};

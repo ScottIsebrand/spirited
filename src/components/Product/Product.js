@@ -1,28 +1,35 @@
+import { useState } from 'react';
+import ProductDetailModal from '../ProductDetailModal/ProductDetailModal';
 import styles from './Product.module.css';
 
 export default function Product({ product, handleAddToOrder }) {
+  const [isModalOpen, setIsModelOpen] = useState(false);
   return (
-    <div className={styles.Product}>
-      {/* <div className={styles.emoji + ' ' + 'flex-ctr-ctr'}>
-        {{product.emoji} 
-      </div> */}
-      <img
-        style={{ height: '40px' }}
-        className="flex-ctr-ctr"
-        src={product.emoji}
-        alt=""
-      />
+    <>
+      <div className={styles.Product}>
+        <img
+          style={{ height: '40px' }}
+          className="flex-ctr-ctr"
+          src={product.emoji}
+          alt=""
+        />
 
-      <div className={styles.name}>{product.name}</div>
-      <div className={styles.buy}>
-        <span>${product.price.toFixed(2)}</span>
-        <button
-          className="btn-sm"
-          onClick={() => handleAddToOrder(product._id)}
-        >
-          ADD
-        </button>
+        <h4 className={styles.name} onClick={() => setIsModelOpen(true)}>
+          {product.name}
+        </h4>
+        <div className={styles.buy}>
+          <span>${product.price.toFixed(2)}</span>
+          <button
+            className="btn-sm"
+            onClick={() => handleAddToOrder(product._id)}
+          >
+            ADD
+          </button>
+        </div>
       </div>
-    </div>
+      {isModalOpen && (
+        <ProductDetailModal product={product} setIsModelOpen={setIsModelOpen} />
+      )}
+    </>
   );
 }

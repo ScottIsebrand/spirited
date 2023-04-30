@@ -36,4 +36,8 @@
   font-size: 2vw;
   text-align: center;
   color: var(--text-light);
+  cursor: pointer;
+}
+.Product .name:hover {
+  color: var(--blue-dark);
 }
