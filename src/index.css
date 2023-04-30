@@ -1,10 +1,10 @@
 /* CSS Custom Properties */
 :root {
   --white: #ffffff;
-  --blue-1: #c3dedd;
+  --blue-1: #e2e3ee;
   --blue-2: #dddee7;
   --blue-3: #d1d1e2;
-  --blue-4: #afaed3;
+  --blue-4: #007ea7;
   --blue-dark: #19128f;
   --text-light: #849496;
   --text-dark: #4e4e5f;
@@ -18,9 +18,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inika', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--blue-4);
@@ -129,7 +127,7 @@ a.button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: 0.1vmin solid var(--blue-2);
+  border: 0.1vmin solid var(--blue-1);
   border-radius: 0.5vmin;
   outline: none;
   cursor: pointer;

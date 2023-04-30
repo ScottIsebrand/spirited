@@ -1,4 +1,4 @@
-.LineItem {
+.CartItem {
   width: 100%;
   display: grid;
   grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
@@ -9,24 +9,24 @@
   font-size: 1.5vw;
 }
 
-.LineItem:last-child {
+.CartItem:last-child {
   border-bottom: 0.1vmin solid var(--tan-3);
 }
 
-.LineItem .qty {
+.CartItem .qty {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.3vw;
 }
 
-.LineItem .extPrice {
+.CartItem .extPrice {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1.3vw;
 }
 
-.LineItem button {
+.CartItem button {
   margin: 0;
 }

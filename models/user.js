@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
 
-// Determine how much processing time it will take to perform the hash (how difficult to decrypt your password).
+// SALT_ROUNDS determines how much processing time it will take to perform the hash (how difficult to decrypt your password).
 const SALT_ROUNDS = 6;
 
 const userSchema = new Schema(

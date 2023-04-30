@@ -1,5 +1,5 @@
 import styles from './OrderDetail.module.css';
-import LineItem from '../LineItem/LineItem';
+import CartItem from '../CartItem/CartItem';
 
 // Used to display the details of any order, including the cart (unpaid order)
 export default function OrderDetail({
@@ -9,9 +9,9 @@ export default function OrderDetail({
 }) {
   if (!order) return null;
 
-  const lineItems = order.lineItems.map((item) => (
-    <LineItem
-      lineItem={item}
+  const cartItem = order.lineItems.map((item) => (
+    <CartItem
+      cartItem={item}
       isPaid={order.isPaid}
       handleChangeQty={handleChangeQty}
       key={item._id}
@@ -33,9 +33,9 @@ export default function OrderDetail({
       <div
         className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`}
       >
-        {lineItems.length ? (
+        {cartItem.length ? (
           <>
-            {lineItems}
+            {cartItem}
             <section className={styles.total}>
               {order.isPaid ? (
                 <span className={styles.right}>TOTAL&nbsp;&nbsp;</span>
@@ -43,7 +43,7 @@ export default function OrderDetail({
                 <button
                   className="btn-sm"
                   onClick={handleCheckout}
-                  disabled={!lineItems.length}
+                  disabled={!cartItem.length}
                 >
                   CHECKOUT
                 </button>
