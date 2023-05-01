@@ -1,11 +1,11 @@
 import styles from './ProductDetailModal.module.css';
 
-export default function ProductDetailModal({ product, setIsModelOpen }) {
+export default function ProductDetailModal({ product, setIsModalOpen }) {
   console.log(product);
   return (
     <>
       <div
-        onClick={() => setIsModelOpen(false)}
+        onClick={() => setIsModalOpen(false)}
         className={styles.ProductDetailModalBackground}
       ></div>
       <div className={styles.ProductDetailModal}>
@@ -16,7 +16,7 @@ export default function ProductDetailModal({ product, setIsModelOpen }) {
           {/* <p className={styles.category.name}>Category: {product.category}</p> */}
           <p className={styles.volume}>Volume: {product.volume}ml</p>
           <p className={styles.inventory}>In stock: {product.quantity}</p>
-          <button onClick={() => setIsModelOpen(false)}>CLOSE</button>
+          <button onClick={() => setIsModalOpen(false)}>CLOSE</button>
         </div>
       </div>
     </>

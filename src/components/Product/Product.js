@@ -3,7 +3,7 @@ import ProductDetailModal from '../ProductDetailModal/ProductDetailModal';
 import styles from './Product.module.css';
 
 export default function Product({ product, handleAddToOrder }) {
-  const [isModalOpen, setIsModelOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div className={styles.Product}>
@@ -14,7 +14,7 @@ export default function Product({ product, handleAddToOrder }) {
           alt=""
         />
 
-        <h4 className={styles.name} onClick={() => setIsModelOpen(true)}>
+        <h4 className={styles.name} onClick={() => setIsModalOpen(true)}>
           {product.name}
         </h4>
         <div className={styles.buy}>
@@ -28,7 +28,7 @@ export default function Product({ product, handleAddToOrder }) {
         </div>
       </div>
       {isModalOpen && (
-        <ProductDetailModal product={product} setIsModelOpen={setIsModelOpen} />
+        <ProductDetailModal product={product} setIsModalOpen={setIsModalOpen} />
       )}
     </>
   );
