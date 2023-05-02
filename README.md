@@ -29,6 +29,8 @@ netlify.app URL is pending deployment
 
 ## Entity Relation Diagram (ERD)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Acknowledgements
 
 ### API
