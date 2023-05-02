@@ -39,5 +39,5 @@
   cursor: pointer;
 }
 .Product .name:hover {
-  color: var(--blue-dark);
+  color: var(--red-bright);
 }

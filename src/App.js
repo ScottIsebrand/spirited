@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import AuthPage from './pages/AuthPage/AuthPage';
 import NewOrderPage from './pages/NewOrderPage/NewOrderPage';
 import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage';

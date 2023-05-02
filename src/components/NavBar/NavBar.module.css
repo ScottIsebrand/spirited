@@ -1,0 +1,8 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  height: 90px;
+}

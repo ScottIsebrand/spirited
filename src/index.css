@@ -4,10 +4,10 @@
   --blue-1: #e2e3ee;
   --blue-2: #dddee7;
   --blue-3: #d1d1e2;
-  --blue-4: #007ea7;
-  --blue-dark: #19128f;
-  --text-light: #849496;
-  --text-dark: #4e4e5f;
+  --red-4: #f42f2f;
+  --red-bright: #f42f2f;
+  --text-light: #968484;
+  --text-dark: #5f4e4e;
 }
 
 *,
@@ -21,7 +21,7 @@ body {
   font-family: 'Inika', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--blue-4);
+  background-color: var(--red-4);
   padding: 2vmin;
   height: 100vh;
 }
@@ -88,8 +88,13 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
+nav.navBarLogo {
+  height: 30px;
+}
+
 p.error-message {
-  color: var(--blue-dark);
+  color: var(--red-bright);
   text-align: center;
 }
 
@@ -117,7 +122,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--blue-dark);
+  border-color: var(--red-bright);
 }
 
 button,
@@ -125,7 +130,7 @@ a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--blue-dark);
+  background-color: var(--red-bright);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -149,7 +154,7 @@ button.btn-xs {
 button:disabled,
 form:invalid button[type='submit'] {
   cursor: not-allowed;
-  background-color: var(--blue-4);
+  background-color: var(--red-4);
 }
 
 button[type='submit'] {

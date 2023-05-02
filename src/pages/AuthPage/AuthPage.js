@@ -2,7 +2,6 @@ import { useState } from 'react';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LogInForm/LogInForm';
 import Logo from '../../components/Logo/Logo';
-
 import styles from './AuthPage.module.css';
 // import LoginForm from '../components/LogInForm';
 
