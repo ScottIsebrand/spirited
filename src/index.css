@@ -84,7 +84,10 @@ code {
   border: 0.1vmin solid var(--blue-3);
   border-radius: 1vmin;
 }
-
+nav {
+  display: flex;
+  flex-direction: row;
+}
 p.error-message {
   color: var(--blue-dark);
   text-align: center;

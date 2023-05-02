@@ -5,7 +5,7 @@ export default function CartItem({ cartItem, isPaid, handleChangeQty }) {
     <div className={styles.CartItem}>
       {/* <div className="flex-ctr-ctr">{cartItem.item.emoji}</div> */}
       <img
-        style={{ height: '40px' }}
+        style={{ height: '50px' }}
         className="flex-ctr-ctr"
         src={cartItem.item.emoji}
         alt=""

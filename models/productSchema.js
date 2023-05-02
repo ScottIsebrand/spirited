@@ -1,11 +1,12 @@
-const item = require('./item');
+// const item = require('./item');
 const Schema = require('mongoose').Schema;
 
-const itemSchema = new Schema(
+const productSchema = new Schema(
   {
     name: { type: String, required: true },
     emoji: String,
     category: { type: Schema.Types.ObjectId, ref: 'Category' },
+    origin: { type: String, required: true },
     volume: { type: Number, required: true, default: 0 },
     quantity: { type: Number, required: true, default: 0 },
     price: { type: Number, required: true, default: 0 },
@@ -15,4 +16,4 @@ const itemSchema = new Schema(
   }
 );
 
-module.exports = itemSchema;
+module.exports = productSchema;

@@ -1,4 +1,4 @@
-const Item = require('../../models/item');
+const Product = require('../../models/product');
 
 module.exports = {
   index,
@@ -7,7 +7,10 @@ module.exports = {
 
 async function index(req, res) {
   try {
-    const items = await Item.find({}).sort('name').populate('category').exec();
+    const items = await Product.find({})
+      .sort('name')
+      .populate('category')
+      .exec();
     // Sorting based on sort order of categories (in seed.js), 10, 20, 30, etc.
     items.sort((a, b) => a.category.sortOrder - b.category.sortOrder);
     res.status(200).json(items);
@@ -18,7 +21,7 @@ async function index(req, res) {
 
 async function show(req, res) {
   try {
-    const item = await Item.findById(req.params.id);
+    const item = await Product.findById(req.params.id);
     res.status(200).json(item);
   } catch (error) {
     res.status(400).json({ msg: error.message });

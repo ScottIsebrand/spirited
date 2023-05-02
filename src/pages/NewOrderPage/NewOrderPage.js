@@ -20,8 +20,6 @@ export default function NewOrderPage({ user, setUser }) {
     async function getItems() {
       const items = await itemsAPI.getAll();
       categoriesRef.current = items.reduce((cats, item) => {
-        console.log(cats);
-        console.log(item);
         const cat = item.category.name;
         return cats.includes(cat) ? cats : [...cats, cat];
       }, []);
@@ -43,6 +41,7 @@ export default function NewOrderPage({ user, setUser }) {
 
   // EVENT HANDLERS
   async function handleAddToOrder(itemId) {
+    console.log(itemId);
     const updatedCart = await ordersAPI.addItemToCart(itemId);
     setCart(updatedCart);
   }

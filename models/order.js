@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const itemSchema = require('./itemSchema');
+const productSchema = require('./productSchema');
 
 // lineItemSchema
 const lineItemSchema = new Schema(
   {
     qty: { type: Number, default: 1 },
-    item: itemSchema,
+    item: productSchema,
   },
   {
     timestamps: true,
@@ -66,7 +66,7 @@ orderSchema.methods.addItemToCart = async function (itemId) {
   if (lineItem) {
     lineItem.qty += 1;
   } else {
-    const item = await mongoose.model('Item').findById(itemId);
+    const item = await mongoose.model('Product').findById(itemId);
     cart.lineItems.push({ item });
   }
   return cart.save();

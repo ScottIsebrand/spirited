@@ -55,7 +55,13 @@ export default function OrderDetail({
             </section>
           </>
         ) : (
-          <div className={styles.hungry}>Thirsty?</div>
+          <div className={styles.cartPrompt}>
+            CART
+            <br />
+            IS
+            <br />
+            EMPTY
+          </div>
         )}
       </div>
     </div>

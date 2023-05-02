@@ -20,7 +20,7 @@
   border-radius: 8px;
   top: 15%;
   margin: auto;
-  z-index: 10; /* Sit on top */
+  z-index: 10; /* z-index: the higher the relative number, the more forward/higher in the "stack level" the rendering of the element in the stack; default is  0*/
 }
 .ProductDetailModal .productDetailContainer h3 {
   border-bottom: solid 0.5px gray;

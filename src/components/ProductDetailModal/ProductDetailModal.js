@@ -14,6 +14,7 @@ export default function ProductDetailModal({ product, setIsModalOpen }) {
           <h3>{product.name}</h3>
           <p className={styles.price}>Price: ${product.price}</p>
           {/* <p className={styles.category.name}>Category: {product.category}</p> */}
+          <p className={styles.origin}>Place of Origin: {product.origin}</p>
           <p className={styles.volume}>Volume: {product.volume}ml</p>
           <p className={styles.inventory}>In stock: {product.quantity}</p>
           <button onClick={() => setIsModalOpen(false)}>CLOSE</button>

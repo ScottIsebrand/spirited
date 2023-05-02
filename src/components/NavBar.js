@@ -9,9 +9,15 @@ function NavBar({ user, setUser }) {
   console.log('This user is admin: ', user.isAdmin);
   return (
     <nav>
-      <Link to="/orders">Order History</Link>
+      <p>LOGO</p>
+      {user.isAdmin ? (
+        <button>Add New Product</button>
+      ) : (
+        <Link to="/orders">Order History</Link>
+      )}
       &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link> <span>Welcome, {user.name}</span>{' '}
+      <Link to="/orders/new">New Order</Link>
+      <p>Welcome, {user.name}</p>
       <Link to="" onClick={handleLogOut}>
         Logout
       </Link>

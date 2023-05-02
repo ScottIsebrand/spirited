@@ -8,7 +8,7 @@ export default function Product({ product, handleAddToOrder }) {
     <>
       <div className={styles.Product}>
         <img
-          style={{ height: '40px' }}
+          style={{ height: '60px' }}
           className="flex-ctr-ctr"
           src={product.emoji}
           alt=""
