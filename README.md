@@ -17,7 +17,7 @@ Express, React, Node), single-page application (SPA) that communicates with the 
 
 ## Tools Used
 
-[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/) | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) | [![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)](https://trello.com/) | [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/) | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) | [![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)](https://trello.com/) | [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/) | [![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -29,13 +29,21 @@ netlify.app URL is pending deployment
 
 ## Entity Relation Diagram (ERD)
 
+URL is pending deployment
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Wireframe
+
+URL is pending deployment
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgements
 
-### API
+### MERN-infrastructure template
 
-- [Wikipedia API Portal](https://github.com/phalt). "[On this day](https://api.wikimedia.org/wiki/API_reference/Feed/On_this_day)."
+- [Abraham Tavarez](https://github.com/AbeTavarez)," my bootcamp instructor, whose in-class codealong "SEI Cafe" project serves as a MERN-infrastructure template that I leaned on heavily.
 
 ### Design
 
