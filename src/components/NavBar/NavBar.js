@@ -11,7 +11,7 @@ function NavBar({ user, setUser }) {
   // console.log('This user is admin: ', user.isAdmin);
   return (
     <nav>
-      <div className={styles.navBarContainer}>
+      <div className="{styles.navBarContainer">
         <div>
           <img
             className={styles.navBarLogo}
@@ -20,7 +20,7 @@ function NavBar({ user, setUser }) {
           />
           {/* <p>LOGO</p> */}
         </div>
-        <div>
+        <div className={styles.navBarMenuContainer}>
           {user.isAdmin ? (
             <button>Add New Product</button>
           ) : (

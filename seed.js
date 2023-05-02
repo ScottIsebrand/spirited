@@ -14,7 +14,7 @@ const User = require('./models/user');
   await Category.deleteMany({});
   const categories = await Category.create([
     { name: 'Gin', sortOrder: 10 },
-    { name: 'Whiskey/Whisky', sortOrder: 20 },
+    { name: 'Whiskey', sortOrder: 20 },
     { name: 'Vodka', sortOrder: 30 },
     { name: 'Rum', sortOrder: 40 },
     { name: 'Tequila', sortOrder: 50 },
@@ -146,6 +146,16 @@ const User = require('./models/user');
       price: 24.0,
     },
     {
+      name: 'Misunderstood Ginger Spiced Whiskey',
+      emoji:
+        'https://www.totalwine.com/dynamic/490x/media/sys_master/twmmedia/h09/hfc/11698274107422.png',
+      category: categories[1],
+      origin: 'Vermont, USA',
+      volume: 750,
+      quantity: 18,
+      price: 29.0,
+    },
+    {
       name: 'Old Overholt rye',
       emoji:
         'https://www.lawlersliquorsonline.com/wp-content/uploads/2018/10/Old-Overholt-Rye.png',
@@ -154,6 +164,16 @@ const User = require('./models/user');
       volume: 750,
       quantity: 18,
       price: 20.0,
+    },
+    {
+      name: 'Seagram’s 7 Crown Blended Whiskey',
+      emoji:
+        'https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/kyeqgpbt/4b5527e3-7790-4520-a78f-1fa6c9ffd8a8.png',
+      category: categories[1],
+      origin: 'Vermont, USA',
+      volume: 750,
+      quantity: 18,
+      price: 14.0,
     },
     {
       name: 'Whistle Pig Small Batch rye 10-yr',

@@ -85,14 +85,13 @@ code {
   border-radius: 1vmin;
 }
 
-/* nav {
-  display: flex;
-  flex-direction: row;
-} */
-
-nav.navBarLogo {
-  height: 30px;
+nav {
+  height: 100px;
 }
+
+/* nav.navBarLogo {
+  height: 30px;
+} */
 
 p.error-message {
   color: var(--blue-light);

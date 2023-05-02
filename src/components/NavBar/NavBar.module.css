@@ -4,8 +4,13 @@
 }
 
 .navBarContainer {
+  height: 80px;
+}
+
+.navBarMenuContainer {
   display: flex;
   flex-direction: row;
+  float: right;
 }
 
 img {
