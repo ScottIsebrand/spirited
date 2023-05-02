@@ -14,3 +14,7 @@
   color: var(--text-light);
   cursor: pointer;
 }
+
+img {
+  height: 100px;
+}

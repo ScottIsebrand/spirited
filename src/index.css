@@ -1,12 +1,12 @@
 /* CSS Custom Properties */
 :root {
   --white: #ffffff;
-  --blue-1: #e2e3ee;
+  --blue-1: #e5e5cb;
   --blue-2: #dddee7;
   --blue-3: #d1d1e2;
   --red-4: #f42f2f;
-  --red-bright: #f42f2f;
-  --text-light: #968484;
+  --blue-light: #2564ec;
+  --text-light: #918a8a;
   --text-dark: #5f4e4e;
 }
 
@@ -84,17 +84,18 @@ code {
   border: 0.1vmin solid var(--blue-3);
   border-radius: 1vmin;
 }
-nav {
+
+/* nav {
   display: flex;
   flex-direction: row;
-}
+} */
 
 nav.navBarLogo {
   height: 30px;
 }
 
 p.error-message {
-  color: var(--red-bright);
+  color: var(--blue-light);
   text-align: center;
 }
 
@@ -122,7 +123,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--red-bright);
+  border-color: var(--blue-light);
 }
 
 button,
@@ -130,7 +131,7 @@ a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--red-bright);
+  background-color: var(--blue-light);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;

@@ -5,7 +5,7 @@
   left: 0;
   position: fixed;
   z-index: 3;
-  background-color: rgba(9, 1, 78, 0.7);
+  background-color: rgba(78, 1, 1, 0.7);
 }
 
 .ProductDetailModal {
@@ -16,7 +16,7 @@
   position: absolute;
   width: 600px;
   height: 500px;
-  background-color: rgb(203, 226, 235);
+  background-color: #fff;
   border-radius: 8px;
   top: 15%;
   margin: auto;

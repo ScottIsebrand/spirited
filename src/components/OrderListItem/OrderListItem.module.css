@@ -18,12 +18,12 @@
 }
 
 .OrderListItem.selected {
-  border-color: var(--red-bright);
+  border-color: var(--blue-light);
   border-width: 0.2vmin;
   cursor: default;
 }
 
 .OrderListItem:not(.selected):hover {
-  border-color: var(--red-bright);
+  border-color: var(--blue-light);
   border-width: 0.2vmin;
 }

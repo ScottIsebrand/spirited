@@ -11,7 +11,7 @@ function NavBar({ user, setUser }) {
   // console.log('This user is admin: ', user.isAdmin);
   return (
     <nav>
-      <div>
+      <div className={styles.navBarContainer}>
         <div>
           <img
             className={styles.navBarLogo}

@@ -3,6 +3,11 @@
   flex-direction: row;
 }
 
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
   height: 90px;
 }
