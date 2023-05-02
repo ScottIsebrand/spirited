@@ -6,7 +6,7 @@ function NavBar({ user, setUser }) {
     logOut();
     setUser(null);
   };
-  console.log('This user is admin: ', user.isAdmin);
+  // console.log('This user is admin: ', user.isAdmin);
   return (
     <nav>
       <p>LOGO</p>
