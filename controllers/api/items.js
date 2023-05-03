@@ -8,7 +8,6 @@ module.exports = {
 };
 
 async function addNewProduct(req, res) {
-  // console.log('[From POST handler]', req.body) // <---- IMPORTANT to console, to "follow the data"
   try {
     // Add the user to the database (ie, creating a new user)
     console.log('>>>>>>', req.body.category);
@@ -16,11 +15,7 @@ async function addNewProduct(req, res) {
     // console.log('}}}}}}}}', categories.name);
     const productData = { ...req.body, category };
     const newProduct = await Product.create(productData);
-    // console.log(user);
 
-    // Stores information; (ie, creating a new jwt)
-    // const token = createJWT(user);
-    // Use res.json to send back a new token AS A STRING with the user data in the payload
     res.json(newProduct);
   } catch (error) {
     console.log(error);

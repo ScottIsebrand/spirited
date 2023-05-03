@@ -43,12 +43,6 @@ export default function AddNewProductForm({ setIsModalOpen }) {
     // Prevent form from being submitted to the server
     evt.preventDefault();
     try {
-      // The promise returned by the signUp service method
-      // will resolve to the user object included in the
-      // payload of the JSON Web Token (JWT)
-      // const user = await login(credentials);
-      // console.log(user);
-      // setUser(user);
       const productData = {
         ...productDetails,
         volume: Number(productDetails.volume),
