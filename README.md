@@ -23,7 +23,7 @@ Express, React, Node), single-page application (SPA) that communicates with the 
 
 ## Live Website
 
-netlify.app URL is pending deployment
+[https://scott-spirited.herokuapp.com/](https://scott-spirited.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
