@@ -29,13 +29,13 @@ Express, React, Node), single-page application (SPA) that communicates with the 
 
 ## Entity Relation Diagram (ERD)
 
-URL is pending deployment
+[ERD](https://github.com/ScottIsebrand/spirited/blob/main/src/assets/Spirited-ERD.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Wireframe
 
-URL is pending deployment
+[Wireframe](https://github.com/ScottIsebrand/spirited/blob/main/src/assets/Spirited-wireframe.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
