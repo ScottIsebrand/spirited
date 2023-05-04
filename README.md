@@ -3,7 +3,7 @@
 # React Portfolio Project
 
 This project was assigned as part of my software engineering boot camp. Its purpose was to create a functioning MERN-stack (MongoDB/Mongoose
-Express, React, Node), single-page application (SPA) that communicates with the Express backend via AJAX and implements token-based authentication and navigation that responds to the login status of the user. Data entities were to be full CRUD (can be created, read, updated, and deleted). My goal was to also include an administrator function and interface, and for my app I created a liquor store, which used as a template a cloned "SEI Cafe" app that was coded in class by instructor Abraham Tavarez.
+Express, React, Node), single-page application (SPA) that communicates with the Express backend via AJAX and implements token-based authentication and navigation that responds to the login status of the user. For my app I created a liquor store, which used as a template a cloned "SEI Cafe" app that was coded in class by instructor Abraham Tavarez. My goal was to also include an administrator function and interface.
 
 ## This Project Was Bootstrapped With...
 

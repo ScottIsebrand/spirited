@@ -1,16 +1,34 @@
 .NavBar {
   display: flex;
+  padding: 0 20px 0 10px;
   flex-direction: row;
-}
-
-.navBarContainer {
-  height: 80px;
+  justify-content: space-between;
 }
 
 .navBarMenuContainer {
   display: flex;
   flex-direction: row;
-  float: right;
+  align-items: center;
+  gap: 100px;
+}
+
+.addProductButton {
+  font-size: 15px;
+  border: none;
+}
+
+.linkButton {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkButton:hover {
+  color: rgb(252, 229, 229);
+}
+
+.userName {
+  margin: 5px 0;
+  font-weight: bold;
 }
 
 img {

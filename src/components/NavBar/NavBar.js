@@ -15,30 +15,37 @@ function NavBar({ user, setUser }) {
   return (
     <>
       {isModalOpen && <AddNewProductForm setIsModalOpen={setIsModalOpen} />}
-      <nav>
-        <div className="{styles.navBarContainer">
+      <nav className={styles.NavBar}>
+        <div>
+          <img
+            className={styles.navBarLogo}
+            src={Logo}
+            alt="Spirited logo, white bottle silhouette on red background"
+          />
+          {/* <p>LOGO</p> */}
+        </div>
+        <div className={styles.navBarMenuContainer}>
           <div>
-            <img
-              className={styles.navBarLogo}
-              src={Logo}
-              alt="Spirited logo, white bottle silhouette on red background"
-            />
-            {/* <p>LOGO</p> */}
-          </div>
-          <div className={styles.navBarMenuContainer}>
             {user.isAdmin ? (
-              <button onClick={() => setIsModalOpen(true)}>
+              <button
+                className={styles.addProductButton}
+                onClick={() => setIsModalOpen(true)}
+              >
                 Add New Product
               </button>
             ) : (
-              <Link to="/orders">Order History</Link>
+              <Link className={styles.linkButton} to="/orders">
+                Order History
+              </Link>
             )}
             &nbsp; | &nbsp;
-            <Link to="/orders/new">New Order</Link>
+            <Link className={styles.linkButton} to="/orders/new">
+              Product List
+            </Link>
           </div>
           <div>
-            <p>Hi, {user.name}</p>
-            <Link to="" onClick={handleLogOut}>
+            <p className={styles.userName}>Hi, {user.name}</p>
+            <Link className={styles.linkButton} to="" onClick={handleLogOut}>
               Logout
             </Link>
           </div>

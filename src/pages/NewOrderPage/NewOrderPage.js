@@ -3,7 +3,6 @@ import * as itemsAPI from '../../utilities/items-api';
 import * as ordersAPI from '../../utilities/orders-api';
 import styles from './NewOrderPage.module.css';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../../components/Logo/Logo';
 import ProductList from '../../components/ProductList/ProductList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
