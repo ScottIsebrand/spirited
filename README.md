@@ -43,11 +43,14 @@ Express, React, Node), single-page application (SPA) that communicates with the 
 
 [Trello board](https://trello.com/b/r4AR50Rd/per-scholas)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Improvements
 
 - Functionality for administrator to delete and update products.
 - Better UX for administrator use of AddNewProductForm.js.
 - Improved styling for NavBar.
+- Need to integrate Administrator into ERD.
 
 ## Acknowledgements
 
