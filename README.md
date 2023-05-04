@@ -3,7 +3,7 @@
 # React Portfolio Project
 
 This project was assigned as part of my software engineering boot camp. Its purpose was to create a functioning MERN-stack (MongoDB/Mongoose
-Express, React, Node), single-page application (SPA) that communicates with the Express backend via AJAX and implements token-based authentication and navigation that responds to the login status of the user. For my app I created a liquor store, which used as a template a cloned "SEI Cafe" app that was coded in class by instructor Abraham Tavarez. My goal was to also include an administrator function and interface.
+Express, React, Node), single-page application (SPA) that communicates with the Express backend via AJAX and implements token-based authentication and navigation that responds to the login status of the user. For my app I created a liquor store, which used as a template a cloned "SEI Cafe" app that was coded in class by instructor Abraham Tavarez. My goal was to also include an administrator function and interface that would allow for at least adding products to the store.
 
 ## This Project Was Bootstrapped With...
 
@@ -38,6 +38,16 @@ Express, React, Node), single-page application (SPA) that communicates with the 
 [Wireframe](https://github.com/ScottIsebrand/spirited/blob/main/src/assets/Spirited-wireframe.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Trello Board
+
+[Trello board](https://trello.com/b/r4AR50Rd/per-scholas)
+
+## Improvements
+
+- Functionality for administrator to delete and update products.
+- Better UX for administrator use of AddNewProductForm.js.
+- Improved styling for NavBar.
 
 ## Acknowledgements
 

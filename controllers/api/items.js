@@ -12,10 +12,10 @@ async function addNewProduct(req, res) {
     // Add a new product to the database (ie, creating a new product)
 
     const category = await Category.findOne({ name: req.body.category });
-    // req.body.name = "Svetka"
+    // req.body.name = "Aviation"
     // req.body.category = 'Gin'
     const productData = { ...req.body, category };
-    // productData.name = "Svetka"
+    // productData.name = "Aviation"
     // productData.category = {_id:645301b19edd555930f16605. name: "Gin"}
     const newProduct = await Product.create(productData);
 
