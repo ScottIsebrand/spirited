@@ -22,7 +22,6 @@ function NavBar({ user, setUser }) {
             src={Logo}
             alt="Spirited logo, white bottle silhouette on red background"
           />
-          {/* <p>LOGO</p> */}
         </div>
         <div className={styles.navBarMenuContainer}>
           <div>

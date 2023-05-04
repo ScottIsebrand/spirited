@@ -4,7 +4,7 @@ const Schema = require('mongoose').Schema;
 const productSchema = new Schema(
   {
     name: { type: String, required: true },
-    emoji: String,
+    image: String,
     category: { type: Schema.Types.ObjectId, ref: 'Category' },
     origin: { type: String, required: true },
     volume: { type: Number, required: true, default: 0 },

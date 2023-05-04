@@ -3,11 +3,10 @@ import styles from './CartItem.module.css';
 export default function CartItem({ cartItem, isPaid, handleChangeQty }) {
   return (
     <div className={styles.CartItem}>
-      {/* <div className="flex-ctr-ctr">{cartItem.item.emoji}</div> */}
       <img
         style={{ height: '50px' }}
         className="flex-ctr-ctr"
-        src={cartItem.item.emoji}
+        src={cartItem.item.image}
         alt=""
       />
       <div className="flex-ctr-ctr flex-col">

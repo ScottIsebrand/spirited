@@ -5,7 +5,7 @@ import styles from './AddNewProductForm.module.css';
 export default function AddNewProductForm({ setIsModalOpen }) {
   const [productDetails, setProductDetails] = useState({
     name: '',
-    emoji: '',
+    image: '',
     category: '',
     origin: '',
     volume: 0,
@@ -16,42 +16,21 @@ export default function AddNewProductForm({ setIsModalOpen }) {
   const [error, setError] = useState('');
 
   function handleChange(evt) {
-    // setCredentials({ ...credentials, [evt.target.name]: evt.target.value });
-    let targetName = evt.target.name;
-    // if (targetName === 'categoryName' || targetName === 'sortOrder') {
-    //   if (targetName === 'categoryName') {
-    //     targetName = 'name';
-    //   }
-    //   setProductDetails({
-    //     ...productDetails,
-    //     category: {
-    //       ...productDetails.category,
-    //       [targetName]: evt.target.value,
-    //     },
-    //   });
-    // } else {
     setProductDetails({
       ...productDetails,
       [evt.target.name]: evt.target.value,
     });
-    // }
 
     setError('');
   }
-  console.log(productDetails);
+
   async function handleSubmit(evt) {
     // Prevent form from being submitted to the server
     evt.preventDefault();
     try {
-      const productData = {
-        ...productDetails,
-        volume: Number(productDetails.volume),
-        quantity: Number(productDetails.quantity),
-        price: Number(productDetails.price),
-      };
-      await addNewProduct(productData);
+      await addNewProduct(productDetails);
     } catch {
-      setError('Log In Failed - Try Again');
+      setError('Adding a new product failed. Try again.');
     }
   }
 
@@ -72,11 +51,11 @@ export default function AddNewProductForm({ setIsModalOpen }) {
               onChange={handleChange}
               required
             />
-            <label>Emoji</label>
+            <label>Image</label>
             <input
               type="text"
-              name="emoji"
-              value={productDetails.emoji}
+              name="image"
+              value={productDetails.image}
               onChange={handleChange}
             />
             <label>Category</label>

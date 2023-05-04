@@ -9,11 +9,14 @@ module.exports = {
 
 async function addNewProduct(req, res) {
   try {
-    // Add the user to the database (ie, creating a new user)
-    console.log('>>>>>>', req.body.category);
+    // Add a new product to the database (ie, creating a new product)
+
     const category = await Category.findOne({ name: req.body.category });
-    // console.log('}}}}}}}}', categories.name);
+    // req.body.name = "Svetka"
+    // req.body.category = 'Gin'
     const productData = { ...req.body, category };
+    // productData.name = "Svetka"
+    // productData.category = {_id:645301b19edd555930f16605. name: "Gin"}
     const newProduct = await Product.create(productData);
 
     res.json(newProduct);

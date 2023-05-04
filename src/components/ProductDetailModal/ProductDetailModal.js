@@ -9,7 +9,7 @@ export default function ProductDetailModal({ product, setIsModalOpen }) {
         className={styles.ProductDetailModalBackground}
       ></div>
       <div className={styles.ProductDetailModal}>
-        <img className={styles.productImage} src={product.emoji} alt="" />
+        <img className={styles.productImage} src={product.image} alt="" />
         <div className={styles.productDetailContainer}>
           <h3>{product.name}</h3>
           <p className={styles.price}>Price: ${product.price}</p>

@@ -10,7 +10,7 @@ export default function Product({ product, handleAddToOrder }) {
         <img
           style={{ height: '60px' }}
           className="flex-ctr-ctr"
-          src={product.emoji}
+          src={product.image}
           alt=""
         />
 
